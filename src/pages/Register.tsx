@@ -1,16 +1,17 @@
 import React from "react";
+import "../styles/register.css";
 
 export default function Register() {
   return (
-    <div>
-      <h1>Psychometrika</h1>
-      <h3>Desafio Trainee</h3>
+    <div className="register-container">
+      <h1 className="company-name">Psychometrika</h1>
+      <h3 className="title">Desafio Trainee</h3>
 
-      <input type="text" />
-      <label>Email</label>
+      <input className="email-input" type="text" />
+      <label className="email-label">Email</label>
 
-      <input type="text" />
-      <label>Senha</label>
+      <input className="password-input" type="text" />
+      <label className="password-label">Senha</label>
     </div>
   );
 }
