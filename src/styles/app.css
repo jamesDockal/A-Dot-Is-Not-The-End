@@ -1,6 +1,7 @@
 .app {
   height: 100vh;
   width: 100vw;
+  background-color: #fafafa;
 }
 .particles {
   position: absolute;

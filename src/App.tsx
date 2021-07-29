@@ -9,10 +9,7 @@ console.log(particlesStyles);
 function App() {
   return (
     <div className="app">
-      <Particles className="particles" params={particlesStyles}>
-        sdfffffffffff
-      </Particles>
-      ;
+      <Particles className="particles" params={particlesStyles} />
       <Register />
     </div>
   );
