@@ -1,18 +1,20 @@
 import React from "react";
-import Register from "./pages/Register";
 import "./styles/app.css";
 
 import Particles from "react-particles-js";
 import particlesStyles from "./styles/particles";
+
+import Register from "./pages/Register";
 import Login from "./pages/Login";
-console.log(particlesStyles);
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="app">
-      <Particles className="particles" params={particlesStyles} />
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
+      <Particles className="particles" params={particlesStyles} />
+      <Home />
     </div>
   );
 }
