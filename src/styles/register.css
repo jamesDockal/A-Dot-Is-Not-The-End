@@ -1,6 +1,6 @@
 .register-container {
   width: 250px;
-  height: 275px;
+  height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,6 +9,10 @@
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
+}
+
+form {
+  margin-top: 48px;
 }
 
 .company-name {
@@ -114,4 +118,15 @@
 
 .register-button:hover {
   filter: brightness(0.9);
+}
+
+.errox-box {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
 }
