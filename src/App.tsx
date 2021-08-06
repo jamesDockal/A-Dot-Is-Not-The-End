@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Chapter from "./pages/Chapter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Particles className="particles" params={particlesStyles} />
       <BrowserRouter>
         <Route exact path="/" component={Home} />
+        <Route exact path="/:book/:chapter" component={Chapter} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
       </BrowserRouter>

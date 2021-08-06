@@ -1,12 +1,27 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "../styles/chaptercard.css";
 
 type IChapterCardProps = {
+  book: {
+    uuid: string;
+    title: string;
+  };
   title: string;
-  content: string;
+  chapterIndex: number;
 };
 
-export default function ChapterCard({ title, content }: IChapterCardProps) {
+export default function ChapterCard({
+  title,
+  book,
+  chapterIndex,
+}: IChapterCardProps) {
+  const history = useHistory();
+
+  function seeChapter() {
+    history.push(`/${book.title}/${chapterIndex}`);
+  }
+
   return (
     <div className="chapter-card">
       <div className="left-components">
@@ -14,13 +29,15 @@ export default function ChapterCard({ title, content }: IChapterCardProps) {
         <div className="chapter-number-circle">
           <small className="chapter-number">1</small>
         </div>
-        <span className="chapter-title">{title}</span>
+        <span onClick={() => seeChapter()} className="chapter-title">
+          {title}
+        </span>
       </div>
       <div className="right-components">
         <div className="icon-box">
           <span className="icon material-icons">visibility</span>
         </div>
-        <div className="icon-box">
+        <div className="icon-box" onClick={() => seeChapter()}>
           <span className="icon material-icons">open_in_new</span>
         </div>
       </div>

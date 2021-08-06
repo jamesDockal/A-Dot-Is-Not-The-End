@@ -35,7 +35,12 @@ export default function BookCard() {
             <span className="book-verse">Frente A</span>
             <div className="all-chapters">
               {book.chapters.map((chapter, index) => (
-                <ChapterCard title={chapter.title} content={chapter.content} />
+                <ChapterCard
+                  key={index}
+                  book={book}
+                  chapterIndex={index}
+                  title={chapter.title}
+                />
               ))}
             </div>
           </div>

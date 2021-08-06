@@ -9,12 +9,6 @@ import "../styles/home.css";
 export default function Home() {
   const [token, setToken] = useState<string | undefined>(Cookies.get("token"));
 
-  const { logOut } = useUser();
-
-  useEffect(() => {
-    console.log("Header token", token);
-  }, [token]);
-
   const hisotry = useHistory();
 
   if (!token) {
@@ -23,7 +17,6 @@ export default function Home() {
   return (
     <div className="home-page">
       <Header />
-      <button onClick={() => logOut(setToken)}>Log Out</button>
 
       <Book />
     </div>

@@ -1,0 +1,12 @@
+.chapter-contener {
+  position: absolute;
+  width: 100%;
+}
+
+.chapter-content {
+  width: 800px;
+  background-color: white;
+  margin: 32px auto;
+  padding: 32px;
+  font-size: 17px;
+}

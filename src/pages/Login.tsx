@@ -8,7 +8,7 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const hisotry = useHistory();
+  const history = useHistory();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ export default function Login() {
 
   useEffect(() => {
     if (token) {
-      hisotry.push("/");
+      history.push("/");
     }
   }, [token]);
 
@@ -28,7 +28,7 @@ export default function Login() {
     setErrorMessage("");
     try {
       await login(email, password);
-      hisotry.push("/");
+      history.push("/");
     } catch (e) {
       console.log("error", e.message);
       setErrorMessage(e.message);
@@ -43,24 +43,28 @@ export default function Login() {
 
       <form onSubmit={(e) => handleSubmit(e)} action="">
         <div className="email-box">
+          <span>Email</span>
           <input
             required
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="email-input"
+            placeholder="Seu email institucional"
             type="text"
           />
-          <label className="email-label">Email</label>
+          {/* <label className="email-label">Email</label> */}
         </div>
 
         <div className="password-box">
+          <span>Password</span>
           <input
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="password-input"
             type={showPassword ? "text" : "password"}
+            placeholder="Mínimo de 8 caracteres"
           />
           <span
             onClick={() => setShowPassword(!showPassword)}
@@ -70,7 +74,7 @@ export default function Login() {
           >
             visibility_off
           </span>
-          <label className="password-label">Senha</label>
+          {/* <label className="password-label">Senha</label> */}
         </div>
         <div className="errox-box">
           <span className="error-message">{errorMessage}</span>

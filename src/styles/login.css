@@ -24,7 +24,7 @@
 }
 .email-box {
   position: relative;
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 .email-input {
   width: 80%;
@@ -67,8 +67,7 @@
   position: absolute;
   color: black;
   right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 67%;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -78,8 +77,7 @@
   position: absolute;
   color: gray;
   right: 2%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 67%;
   cursor: pointer;
 }
 
@@ -101,7 +99,7 @@
 
 .login-button {
   cursor: pointer;
-  margin-top: 24px;
+  margin-top: 16px;
   background-color: #00718a;
   color: white;
   width: 103%;
