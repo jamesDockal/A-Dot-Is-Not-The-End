@@ -1,6 +1,7 @@
 {
   "name": "a-dot-is-not-the-end",
   "version": "0.1.0",
+  "private": true,
   "homepage": "https://jamesDockal.github.io/A-Dot-Is-Not-The-End",
   "private": true,
   "dependencies": {
