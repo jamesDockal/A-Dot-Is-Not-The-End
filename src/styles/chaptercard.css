@@ -1,0 +1,72 @@
+.chapter-card {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.left-components {
+  display: flex;
+}
+
+.right-components {
+  display: flex;
+}
+
+.icon {
+  color: #00718a;
+  cursor: pointer;
+}
+.drag {
+  transform: scale(1.5);
+  margin-right: 8px;
+}
+.icon-box {
+  cursor: pointer;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  background-color: #e6e6e7;
+  position: relative;
+  border-radius: 50%;
+}
+
+.icon-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chapter-number-circle {
+  color: #8c939d;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border: 2px solid #8c939d;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.chapter-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  /* color: red; */
+}
+
+.chapter-title {
+  color: #424242;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
