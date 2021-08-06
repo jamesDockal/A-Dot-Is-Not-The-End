@@ -13,7 +13,11 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { register } = useUser();
+  const { user, register } = useUser();
+
+  if (user) {
+    hisotry.push("/");
+  }
 
   async function handleSubmit(e: FormEvent) {
     try {
