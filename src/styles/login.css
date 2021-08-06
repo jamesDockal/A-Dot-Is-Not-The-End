@@ -108,4 +108,10 @@
   padding: 10px 16px;
   border: none;
   border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  filter: brightness(0.9);
 }

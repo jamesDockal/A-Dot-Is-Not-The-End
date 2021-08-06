@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/app.css";
 
-// import Particles from "react-particles-js";
-// import particlesStyles from "./styles/particles";
+import Particles from "react-particles-js";
+import particlesStyles from "./styles/particles";
 
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="app">
+      <Particles className="particles" params={particlesStyles} />
       <BrowserRouter>
         <Route exact path="/" component={Home} />
         <Route path="/register" component={Register} />

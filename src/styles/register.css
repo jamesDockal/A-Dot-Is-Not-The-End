@@ -107,5 +107,11 @@
   width: 103%;
   padding: 10px 16px;
   border: none;
+  text-transform: uppercase;
+  font-weight: bold;
   border-radius: 8px;
+}
+
+.register-button:hover {
+  filter: brightness(0.9);
 }
