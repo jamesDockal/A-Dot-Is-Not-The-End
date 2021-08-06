@@ -1,0 +1,40 @@
+.all-books {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.book-container {
+  margin-left: 48px;
+  margin-top: 32px;
+  width: 453px;
+}
+
+.class-name {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #424242;
+}
+
+.book-verse {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #424242;
+}
+
+.chapters {
+  background-color: white;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.all-chapters {
+  margin-top: 16px;
+}
