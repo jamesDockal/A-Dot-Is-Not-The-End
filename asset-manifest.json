@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/A-Dot-Is-Not-The-End/static/css/main.fcec1531.chunk.css",
+    "main.js": "/A-Dot-Is-Not-The-End/static/js/main.a02a7287.chunk.js",
+    "main.js.map": "/A-Dot-Is-Not-The-End/static/js/main.a02a7287.chunk.js.map",
+    "runtime-main.js": "/A-Dot-Is-Not-The-End/static/js/runtime-main.47222170.js",
+    "runtime-main.js.map": "/A-Dot-Is-Not-The-End/static/js/runtime-main.47222170.js.map",
+    "static/js/2.270f2779.chunk.js": "/A-Dot-Is-Not-The-End/static/js/2.270f2779.chunk.js",
+    "static/js/2.270f2779.chunk.js.map": "/A-Dot-Is-Not-The-End/static/js/2.270f2779.chunk.js.map",
+    "index.html": "/A-Dot-Is-Not-The-End/index.html",
+    "static/css/main.fcec1531.chunk.css.map": "/A-Dot-Is-Not-The-End/static/css/main.fcec1531.chunk.css.map",
+    "static/js/2.270f2779.chunk.js.LICENSE.txt": "/A-Dot-Is-Not-The-End/static/js/2.270f2779.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47222170.js",
+    "static/js/2.270f2779.chunk.js",
+    "static/css/main.fcec1531.chunk.css",
+    "static/js/main.a02a7287.chunk.js"
+  ]
+}
