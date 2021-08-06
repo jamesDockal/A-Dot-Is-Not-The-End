@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import api from "../../services/api";
 
 async function login(email: string, password: string) {
@@ -6,7 +7,8 @@ async function login(email: string, password: string) {
       email,
       password,
     });
-    return data.token;
+
+    Cookies.set("token", data.token);
   } catch (e) {
     throw new Error(e.response.data.error);
   }

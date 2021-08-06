@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useUser } from "../contexts/UserContext";
 import "../styles/register.css";
@@ -13,17 +13,20 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { user, register } = useUser();
+  const { register } = useUser();
 
-  if (user) {
-    hisotry.push("/");
-  }
+  const token = Cookies.get("token");
+
+  useEffect(() => {
+    if (token) {
+      hisotry.push("/");
+    }
+  }, [token]);
 
   async function handleSubmit(e: FormEvent) {
     try {
       e.preventDefault();
-      const token = await register(email, password);
-      Cookies.set("token", token);
+      await register(email, password);
       hisotry.push("/");
     } catch (e) {
       console.log("error", e.message);
