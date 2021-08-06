@@ -24,12 +24,39 @@
   font-size: 20px;
 }
 
+.no-visible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.with-background {
+  background-color: #e5e5e5;
+}
+
 .user-actions {
   display: flex;
+  transition: 0.3s;
+
   gap: 16px;
+  width: 75px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .user-image {
+  margin-left: 8px;
+  visibility: visible;
+  opacity: 1;
+
   color: #0683f9;
   background: linear-gradient(
       0deg,
@@ -51,13 +78,78 @@
   transform: translate(-50%, -50%);
 }
 
+.user-access {
+  background-color: white;
+  position: absolute;
+  right: 2%;
+  top: 9%;
+  width: 291px;
+  height: 182px;
+  padding: 16px;
+  z-index: 3;
+}
+
+.access-info {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  color: #616161;
+}
+
+.option {
+  margin-top: 16px;
+}
+
+.option {
+  margin-bottom: 16px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  font-weight: 400;
+  font-size: 16px;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #00718a;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #00718a;
+  border: 2px solid #00718a;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
 .logout-button {
-  background-color: red;
   border: none;
-  width: 100px;
-  padding: 10px 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: azure;
-  border-radius: 8px;
+  background-color: white;
+  color: #00718a;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.1px;
+  border-top: 1px solid lightgray;
+}
+
+.change {
+  color: #00718a;
 }
